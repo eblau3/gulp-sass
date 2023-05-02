@@ -1,0 +1,7 @@
+@use "../../global" as *;
+
+$block: "p-block";
+
+.#{$block} {
+  // ...
+}

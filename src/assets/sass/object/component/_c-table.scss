@@ -1,0 +1,39 @@
+//----------------------------------------------------------------------------------------------------
+// Table
+//----------------------------------------------------------------------------------------------------
+// Use:
+// <table class="c-table">
+//   <tbody>
+//     <tr>
+//       <th>...</th>
+//       <td>...</td>
+//     </tr>
+//   </tbody>
+// </table>
+//
+// Modifire:
+// c-table--[ fixed ]
+//----------------------------------------------------------------------------------------------------
+@use "../../global" as *;
+
+$block: 'c-table';
+
+.#{$block} {
+  display: table;
+  width: 100%;
+  table-layout: auto;
+  &--fixed {
+    table-layout: fixed;
+  }
+  th,
+  td {
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    border: solid 1px #000000;
+  }
+  th {
+    text-align: center;
+  }
+}

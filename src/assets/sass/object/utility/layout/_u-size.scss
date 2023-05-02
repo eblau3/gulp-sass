@@ -1,0 +1,65 @@
+@use "../../../global" as *;
+
+// width
+@include responsive using ($prefix) {
+  .#{$prefix}u-w-auto   {width: auto !important;}
+  .#{$prefix}u-w-full   {width: 100% !important;}
+  .#{$prefix}u-w-screen {width: 100vw !important;}
+  .#{$prefix}u-w-0      {width: 0 !important;}
+  .#{$prefix}u-w-1\/12  {width: 8.333333% !important;}
+  .#{$prefix}u-w-2\/12  {width: 16.666667% !important;}
+  .#{$prefix}u-w-3\/12  {width: 25% !important;}
+  .#{$prefix}u-w-4\/12  {width: 33.333333% !important;}
+  .#{$prefix}u-w-5\/12  {width: 41.666667% !important;}
+  .#{$prefix}u-w-6\/12  {width: 50% !important;}
+  .#{$prefix}u-w-7\/12  {width: 58.333333% !important;}
+  .#{$prefix}u-w-8\/12  {width: 66.666667% !important;}
+  .#{$prefix}u-w-9\/12  {width: 75% !important;}
+  .#{$prefix}u-w-10\/12 {width: 83.333333% !important;}
+  .#{$prefix}u-w-11\/12 {width: 91.666667% !important;}
+  .#{$prefix}u-w-12\/12 {width: 100% !important;}
+  .#{$prefix}u-vw-1\/12  {width: 8.333333vw !important;}
+  .#{$prefix}u-vw-2\/12  {width: 16.666667vw !important;}
+  .#{$prefix}u-vw-3\/12  {width: 25vw !important;}
+  .#{$prefix}u-vw-4\/12  {width: 33.333333vw !important;}
+  .#{$prefix}u-vw-5\/12  {width: 41.666667vw !important;}
+  .#{$prefix}u-vw-6\/12  {width: 50vw !important;}
+  .#{$prefix}u-vw-7\/12  {width: 58.333333vw !important;}
+  .#{$prefix}u-vw-8\/12  {width: 66.666667vw !important;}
+  .#{$prefix}u-vw-9\/12  {width: 75vw !important;}
+  .#{$prefix}u-vw-10\/12 {width: 83.333333vw !important;}
+  .#{$prefix}u-vw-11\/12 {width: 91.666667vw !important;}
+  .#{$prefix}u-vw-12\/12 {width: 100vw !important;}
+}
+
+// height
+@include responsive using ($prefix) {
+  .#{$prefix}u-h-auto   {height: auto !important;}
+  .#{$prefix}u-h-full   {height: 100% !important;}
+  .#{$prefix}u-h-screen {height: 100vw !important;}
+  .#{$prefix}u-h-0      {height: 0 !important;}
+  .#{$prefix}u-h-1\/12  {height: 8.333333% !important;}
+  .#{$prefix}u-h-2\/12  {height: 16.666667% !important;}
+  .#{$prefix}u-h-3\/12  {height: 25% !important;}
+  .#{$prefix}u-h-4\/12  {height: 33.333333% !important;}
+  .#{$prefix}u-h-5\/12  {height: 41.666667% !important;}
+  .#{$prefix}u-h-6\/12  {height: 50% !important;}
+  .#{$prefix}u-h-7\/12  {height: 58.333333% !important;}
+  .#{$prefix}u-h-8\/12  {height: 66.666667% !important;}
+  .#{$prefix}u-h-9\/12  {height: 75% !important;}
+  .#{$prefix}u-h-10\/12 {height: 83.333333% !important;}
+  .#{$prefix}u-h-11\/12 {height: 91.666667% !important;}
+  .#{$prefix}u-h-12\/12 {height: 100% !important;}
+  .#{$prefix}u-vh-1\/12  {height: 8.333333vh !important;}
+  .#{$prefix}u-vh-2\/12  {height: 16.666667vh !important;}
+  .#{$prefix}u-vh-3\/12  {height: 25vh !important;}
+  .#{$prefix}u-vh-4\/12  {height: 33.333333vh !important;}
+  .#{$prefix}u-vh-5\/12  {height: 41.666667vh !important;}
+  .#{$prefix}u-vh-6\/12  {height: 50vh !important;}
+  .#{$prefix}u-vh-7\/12  {height: 58.333333vh !important;}
+  .#{$prefix}u-vh-8\/12  {height: 66.666667vh !important;}
+  .#{$prefix}u-vh-9\/12  {height: 75vh !important;}
+  .#{$prefix}u-vh-10\/12 {height: 83.333333vh !important;}
+  .#{$prefix}u-vh-11\/12 {height: 91.666667vh !important;}
+  .#{$prefix}u-vh-12\/12 {height: 100vh !important;}
+}

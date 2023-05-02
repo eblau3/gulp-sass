@@ -1,0 +1,7 @@
+@use "../../../global" as *;
+
+// flex-grow
+@include responsive using ($prefix) {
+  .#{$prefix}u-flex-grow-0 {flex-grow: 0 !important;}
+  .#{$prefix}u-flex-grow   {flex-grow: 1 !important;}
+}

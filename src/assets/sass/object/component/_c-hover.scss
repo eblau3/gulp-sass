@@ -1,0 +1,38 @@
+//----------------------------------------------------------------------------------------------------
+// Hover
+//----------------------------------------------------------------------------------------------------
+// Use:
+// <a class="c-hover">...</a>
+//
+// Modifire:
+// c-hover--[ remove | underline ]
+//----------------------------------------------------------------------------------------------------
+@use "../../global" as *;
+
+$block: 'c-hover';
+
+.#{$block} {
+	opacity: 1;
+	transition: all 0.2s ease;
+  @include media(hover) { 
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.#{$block}--remove {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.#{$block}--underline {
+  text-decoration: underline;
+	transition: all 0.2s ease;
+  @include media(hover) {
+    &:hover {
+      text-decoration: none;
+      opacity: 1;
+    }
+  }
+}

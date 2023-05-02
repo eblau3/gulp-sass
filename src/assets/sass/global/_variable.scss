@@ -1,0 +1,106 @@
+//----------------------------------------------------------------------------------------------------
+// variable
+//----------------------------------------------------------------------------------------------------
+@use "root" as *;
+
+$color: (
+	'black': #000000,
+	'white': #ffffff,
+);
+
+$font-size: (
+	2xs: (
+		sm: rem(8),
+    md: rem(8),
+		lg: rem(10),
+	),
+	xs: (
+		sm: rem(10),
+    md: rem(10),
+		lg: rem(12),
+	),
+	sm: (
+    sm: rem(12),
+    md: rem(12),
+		lg: rem(14),
+	),
+	normal: (
+    sm: rem(14),
+    md: rem(14),
+		lg: rem(16),
+	),
+	lg: (
+		sm: rem(16),
+    md: rem(16),
+		lg: rem(18),
+	),
+	xl: (
+		sm: rem(18),
+    md: rem(18),
+		lg: rem(20),
+	),
+	2xl: (
+		sm: rem(20),
+    md: rem(20),
+		lg: rem(24),
+	),
+	3xl: (
+		sm: rem(24),
+    md: rem(24),
+		lg: rem(32),
+	),
+);
+
+$font-family: (
+  'system': #{'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif},
+);
+
+$font-weight: (
+	'thin': 100,
+	'extralight': 200,
+	'light': 300,
+	'normal': 400,
+	'medium': 500,
+	'semibold': 600,
+	'bold': 700,
+	'extrabold': 800,
+	'black': 900,
+);
+
+$letter-spacing: (
+  xs: -0.05em,
+  sm: -0.025em,
+  normal: 0,
+  lg: 0.025em,
+  xl: 0.05em,
+  2xl: 0.1em,
+);
+
+$line-height: (
+  none: 1,
+  sm: 1.25,
+  normal: 1.5,
+  lg: 2,
+  xl: 2.5,
+);
+
+$spacing: (
+  none: 0,
+  2xs: rem(4),
+  xs: rem(8),
+  sm: rem(16),
+  md: rem(24),
+  lg: rem(32),
+  xl: rem(48),
+  2xl: rem(64),
+	3xl: rem(80),
+  4xl: rem(112),
+  5xl: rem(144),
+);
+
+$breakpoints: (
+	'md': 1024px,
+	'sm': 599px,
+);
+
+$path: '../images';

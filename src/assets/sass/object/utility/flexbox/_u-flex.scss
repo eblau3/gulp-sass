@@ -1,0 +1,9 @@
+@use "../../../global" as *;
+
+// flex
+@include responsive using ($prefix) {
+  .#{$prefix}u-flex-1       {flex: 1 1 0% !important;}
+  .#{$prefix}u-flex-auto    {flex: 1 1 auto !important;}
+  .#{$prefix}u-flex-initial {flex: 0 1 auto !important;}
+  .#{$prefix}u-flex-none    {flex: none !important;}
+}

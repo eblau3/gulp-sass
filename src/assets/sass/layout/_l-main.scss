@@ -1,0 +1,9 @@
+@use '../global' as *;
+
+.l-main {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	margin-right: auto;
+	margin-left: auto;
+}

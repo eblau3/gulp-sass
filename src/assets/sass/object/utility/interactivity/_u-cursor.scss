@@ -1,0 +1,12 @@
+@use "../../../global" as *;
+
+// cursor
+@include responsive using ($prefix) {
+  .#{$prefix}u-cursor-auto        {cursor: auto !important;}
+  .#{$prefix}u-cursor-default     {cursor: default !important;}
+  .#{$prefix}u-cursor-pointer     {cursor: pointer !important;}
+  .#{$prefix}u-cursor-wait        {cursor: wait !important;}
+  .#{$prefix}u-cursor-text        {cursor: text !important;}
+  .#{$prefix}u-cursor-move        {cursor: move !important;}
+  .#{$prefix}u-cursor-not-allowed {cursor: not-allowed !important;}
+}

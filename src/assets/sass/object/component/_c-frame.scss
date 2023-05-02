@@ -1,0 +1,48 @@
+//----------------------------------------------------------------------------------------------------
+// Frame
+//----------------------------------------------------------------------------------------------------
+// Use:
+// <div class="c-frame c-frame--16to9">
+//  <img src="">
+// </div>
+//
+// Modifire:
+// c-frame--[ 1to1 | 4to3 | 3to2 | 16to9 | 2to1 | 12to5 ]
+//----------------------------------------------------------------------------------------------------
+@use "../../global" as *;
+
+$block: 'c-frame';
+
+.#{$block} {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: auto;
+  & > img,
+  & > iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.#{$block} {
+  &--1to1 {
+    aspect-ratio: 1/1;
+  }
+  &--4to3 {
+    aspect-ratio: 4/3;
+  } 
+  &--3to2 {
+    aspect-ratio: 3/2;
+  }
+  &--16to9 {
+    aspect-ratio: 16/9;
+  }
+  &--2to1 {
+    aspect-ratio: 2/1;
+  }
+  &--12to5 {
+    aspect-ratio: 12/5;
+  }
+}

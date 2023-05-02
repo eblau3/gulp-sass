@@ -1,0 +1,11 @@
+@use "../../../global" as *;
+
+// display
+@include responsive using ($prefix) {
+  .#{$prefix}u-block        {display: block !important;}
+  .#{$prefix}u-inline-block {display: inline-block !important;}
+  .#{$prefix}u-inline       {display: inline !important;}
+  .#{$prefix}u-flex         {display: flex !important;}
+  .#{$prefix}u-inline-flex  {display: inline-flex !important;}
+  .#{$prefix}u-none         {display: none !important;}
+}

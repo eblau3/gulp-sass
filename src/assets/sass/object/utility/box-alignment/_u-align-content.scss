@@ -1,0 +1,11 @@
+@use "../../../global" as *;
+
+// align-content
+@include responsive using ($prefix) {
+  .#{$prefix}u-content-center  {align-content: center !important;}
+  .#{$prefix}u-content-start   {align-content: flex-start !important;}
+  .#{$prefix}u-content-end     {align-content: flex-end !important;}
+  .#{$prefix}u-content-between {align-content: space-between !important;}
+  .#{$prefix}u-content-around  {align-content: space-around !important;}
+  .#{$prefix}u-content-evenly  {align-content: space-evenly !important;}
+}

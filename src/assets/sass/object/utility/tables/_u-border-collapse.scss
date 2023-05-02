@@ -1,0 +1,7 @@
+@use "../../../global" as *;
+
+// border-collapse
+@include responsive using ($prefix) {
+  .#{$prefix}u-border-collapse {border-collapse: collapse !important;}
+  .#{$prefix}u-border-separate {border-collapse: separate !important;}
+}

@@ -1,0 +1,10 @@
+@use "../../../global" as *;
+
+// align-self
+@include responsive using ($prefix) {
+  .#{$prefix}u-self-auto	  {align-self: auto !important;}
+  .#{$prefix}u-self-start	  {align-self: flex-start !important;}
+  .#{$prefix}u-self-end		  {align-self: flex-end !important;}
+  .#{$prefix}u-self-center	{align-self: center !important;}
+  .#{$prefix}u-self-stretch	{align-self: stretch !important;}
+}

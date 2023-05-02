@@ -1,0 +1,19 @@
+@use "../../../global" as *;
+
+// font-family
+@include responsive using ($prefix) {
+  @each $name, $value in $font-family {
+  	.#{$prefix}u-font-#{$name} {
+  		font-family: $value !important;
+  	}
+  }
+}
+
+// font-weight
+@include responsive using ($prefix) {
+  @each $name, $value in $font-weight {
+  	.#{$prefix}u-font-#{$name} {
+  		font-weight: $value !important;
+  	}
+  }
+}

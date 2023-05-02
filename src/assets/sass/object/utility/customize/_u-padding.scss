@@ -1,0 +1,33 @@
+@use "../../../global" as *;
+
+@include responsive using ($prefix) {
+  // padding
+  @each $name, $value in $spacing {
+    .#{$prefix}u-p-#{$name} {padding: $value !important;}
+  }
+  .#{$prefix}u-p-0 {padding: 0 !important;}
+
+  // padding-top
+  @each $name, $value in $spacing {
+    .#{$prefix}u-pt-#{$name} {padding-top: $value !important;}
+  }
+  .#{$prefix}u-pt-0 {padding-top: 0 !important;}
+
+  // padding-right
+  @each $name, $value in $spacing {
+    .#{$prefix}u-pr-#{$name} {padding-right: $value !important;}
+  }
+  .#{$prefix}u-pr-0 {padding-right: 0 !important;}
+
+  // padding-bottom
+  @each $name, $value in $spacing {
+    .#{$prefix}u-pb-#{$name} {padding-bottom: $value !important;}
+  }
+  .#{$prefix}u-pb-0 {padding-bottom: 0 !important;}
+
+  // padding-left
+  @each $name, $value in $spacing {
+    .#{$prefix}u-pl-#{$name} {padding-left: $value !important;}
+  }
+  .#{$prefix}u-pl-0 {padding-left: 0 !important;}
+}

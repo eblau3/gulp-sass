@@ -1,0 +1,11 @@
+@use "../../../global" as *;
+
+// justify-content
+@include responsive using ($prefix) {
+  .#{$prefix}u-justify-start   {justify-content: flex-start !important;}
+  .#{$prefix}u-justify-end     {justify-content: flex-end !important;}
+  .#{$prefix}u-justify-center  {justify-content: center !important;}
+  .#{$prefix}u-justify-between {justify-content: space-between !important;}
+  .#{$prefix}u-justify-around  {justify-content: space-around !important;}
+  .#{$prefix}u-justify-evenly  {justify-content: space-evenly !important;}
+}

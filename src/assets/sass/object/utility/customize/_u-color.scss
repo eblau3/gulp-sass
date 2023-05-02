@@ -1,0 +1,10 @@
+@use "../../../global" as *;
+
+// color
+@include responsive using ($prefix) {
+  @each $name, $value in $color {
+  	.#{$prefix}u-color-#{$name} {
+  		color: $value !important;
+  	}
+  }
+}

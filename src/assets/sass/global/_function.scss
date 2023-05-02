@@ -1,0 +1,42 @@
+@use "variable" as *;
+
+// color
+@function color($key) {
+	@return map-get($color, $key);
+}
+
+// font-size
+@function font-size($key, $key2) {
+  $map: map-get($font-size, $key);
+  @return map-get($map, $key2);
+}
+
+// font-family
+@function font-family($key) {
+	@return map-get($font-family, $key);
+}
+
+// font-weight
+@function font-weight($key) {
+	@return map-get($font-weight, $key);
+}
+
+// letter-spacing
+@function letter-spacing($key) {
+	@return map-get($letter-spacing, $key);
+}
+
+// line-height
+@function line-height($key) {
+	@return map-get($line-height, $key);
+}
+
+// spacing
+@function spacing($key) {
+	@return map-get($spacing, $key);
+}
+
+// image
+@function image($name) {
+	@return url('#{$path}/#{$name}');
+}

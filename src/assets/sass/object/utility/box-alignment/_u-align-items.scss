@@ -1,0 +1,10 @@
+@use "../../../global" as *;
+
+// align-items
+@include responsive using ($prefix) {
+  .#{$prefix}u-items-start    {align-items: flex-start !important;}
+  .#{$prefix}u-items-end      {align-items: flex-end !important;}
+  .#{$prefix}u-items-center   {align-items: center !important;}
+  .#{$prefix}u-items-baseline {align-items: baseline !important;}
+  .#{$prefix}u-items-stretch  {align-items: stretch !important;}
+}

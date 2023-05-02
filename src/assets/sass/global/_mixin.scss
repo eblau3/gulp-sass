@@ -1,0 +1,60 @@
+@use "sass:string";
+@use "root" as *;
+@use "variable" as *;
+
+// media
+@mixin media($args) {
+  @if $args == 'hover' {
+    @media (hover: hover) {
+      @content;
+    }
+  } @else if $args == 'retina' {
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: map-get($breakpoints, $args)) {
+      @content;
+    }
+  }
+}
+
+// responsive
+@mixin responsive {
+  @content(null);
+  @each $name, $value in $breakpoints {
+    $prefix: '#{$name}\\:';
+    @media screen and (max-width: $value) {
+      @content($prefix);
+    }
+  }
+}
+
+// font-size
+@mixin font-size($lg:null, $md:null, $sm:null) {
+  @if $lg {
+    font-size: map-deep-get($font-size, $lg, lg);
+  }
+  @if $md {
+    @include media(md) {
+      font-size: map-deep-get($font-size, $md, md);
+    }
+  } @else {
+    @include media(md) {
+      font-size: map-deep-get($font-size, $lg, md);
+    }
+  }
+  @if $sm {
+    @include media(sm) {
+      font-size: map-deep-get($font-size, $sm, sm);
+    }
+  } @else if $md {
+    @include media(sm) {
+      font-size: map-deep-get($font-size, $md, sm);
+    }
+  } @else {
+    @include media(sm) {
+      font-size: map-deep-get($font-size, $lg, sm);
+    }
+  }
+}

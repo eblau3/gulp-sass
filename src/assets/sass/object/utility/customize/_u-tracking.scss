@@ -1,0 +1,10 @@
+@use "../../../global" as *;
+
+// letter-spacing
+@include responsive using ($prefix) {
+  @each $name, $value in $letter-spacing {
+  	.#{$prefix}u-tracking-#{$name} {
+  		letter-spacing: tracking($name) !important;
+  	}
+  }
+}

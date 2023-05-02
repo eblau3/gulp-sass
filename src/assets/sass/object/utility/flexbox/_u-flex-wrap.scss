@@ -1,0 +1,8 @@
+@use "../../../global" as *;
+
+// flex-wrap
+@include responsive using ($prefix) {
+  .#{$prefix}u-flex-wrap         {flex-wrap: wrap !important;}
+  .#{$prefix}u-flex-wrap-reverse {flex-wrap: wrap-reverse !important;}
+  .#{$prefix}u-flex-nowrap       {flex-wrap: nowrap !important;}
+}

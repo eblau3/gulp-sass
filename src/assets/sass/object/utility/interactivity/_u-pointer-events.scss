@@ -1,0 +1,7 @@
+@use "../../../global" as *;
+
+// pointer-events
+@include responsive using ($prefix) {
+  .#{$prefix}u-pointer-events-none {pointer-events: none !important;}
+  .#{$prefix}u-pointer-events-auto {pointer-events: auto !important;}
+}

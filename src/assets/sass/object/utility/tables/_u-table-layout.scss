@@ -1,0 +1,7 @@
+@use "../../../global" as *;
+
+// table-layout
+@include responsive using ($prefix) {
+  .#{$prefix}u-table-auto  {table-layout: auto !important;}
+  .#{$prefix}u-table-fixed {table-layout: fixed !important;}
+}

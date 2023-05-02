@@ -1,0 +1,9 @@
+@use "../../../global" as *;
+
+// flex-direction
+@include responsive using ($prefix) {
+  .#{$prefix}u-flex-row         {flex-direction: row !important;}
+  .#{$prefix}u-flex-row-reverse {flex-direction: row-reverse !important;}
+  .#{$prefix}u-flex-col         {flex-direction: column !important;}
+  .#{$prefix}u-flex-col-reverse {flex-direction: column-reverse !important;}
+}

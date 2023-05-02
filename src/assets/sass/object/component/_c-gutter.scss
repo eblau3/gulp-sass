@@ -1,0 +1,28 @@
+//----------------------------------------------------------------------------------------------------
+// Gutter
+//----------------------------------------------------------------------------------------------------
+// Use:
+// <ul class="c-grid c-gutter--lg">
+//   <li class="c-grid__6">...</li>
+//   <li class="c-grid__6">...</li>
+// </ul>
+//
+// Modifire:
+// c-grid--[ $spacing ]
+//----------------------------------------------------------------------------------------------------
+@use "../../global" as *;
+
+$block: 'c-gutter';
+
+@include responsive using ($prefix) {
+	@each $name, $value in $spacing {
+		.#{$prefix}#{$block}--#{$name} {
+			margin-top: -#{$value};
+			margin-left: -#{$value};
+			& > * {
+				padding-top: $value;
+				padding-left: $value;
+			}
+		}
+	}
+}

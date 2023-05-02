@@ -1,0 +1,121 @@
+@use "../../../global" as *;
+
+// position
+@include responsive using ($prefix) {
+  .#{$prefix}u-static   {position: static !important;}
+  .#{$prefix}u-fixed    {position: fixed !important;}
+  .#{$prefix}u-absolute {position: absolute !important;}
+  .#{$prefix}u-relative {position: relative !important;}
+  .#{$prefix}u-sticky   {position: sticky !important;}
+}
+
+// top / right / bottom / left
+@include responsive using ($prefix) {
+  .#{$prefix}u-top-0  {top: 0 !important;}
+  .#{$prefix}u-top-auto  {top: auto !important;}
+  .#{$prefix}u-top-1\/12  {top: 8.333333% !important;}
+  .#{$prefix}u-top-2\/12  {top: 16.666667% !important;}
+  .#{$prefix}u-top-3\/12  {top: 25% !important;}
+  .#{$prefix}u-top-4\/12  {top: 33.333333% !important;}
+  .#{$prefix}u-top-5\/12  {top: 41.666667% !important;}
+  .#{$prefix}u-top-6\/12  {top: 50% !important;}
+  .#{$prefix}u-top-7\/12  {top: 58.333333% !important;}
+  .#{$prefix}u-top-8\/12  {top: 66.666667% !important;}
+  .#{$prefix}u-top-9\/12  {top: 75% !important;}
+  .#{$prefix}u-top-10\/12 {top: 83.333333% !important;}
+  .#{$prefix}u-top-11\/12 {top: 91.666667% !important;}
+  .#{$prefix}u-top-12\/12 {top: 100% !important;}
+  .#{$prefix}u-top-neg-1\/12  {top: - 8.333333% !important;}
+  .#{$prefix}u-top-neg-2\/12  {top: - 16.666667% !important;}
+  .#{$prefix}u-top-neg-3\/12  {top: - 25% !important;}
+  .#{$prefix}u-top-neg-4\/12  {top: - 33.333333% !important;}
+  .#{$prefix}u-top-neg-5\/12  {top: - 41.666667% !important;}
+  .#{$prefix}u-top-neg-6\/12  {top: - 50% !important;}
+  .#{$prefix}u-top-neg-7\/12  {top: - 58.333333% !important;}
+  .#{$prefix}u-top-neg-8\/12  {top: - 66.666667% !important;}
+  .#{$prefix}u-top-neg-9\/12  {top: - 75% !important;}
+  .#{$prefix}u-top-neg-10\/12 {top: - 83.333333% !important;}
+  .#{$prefix}u-top-neg-11\/12 {top: - 91.666667% !important;}
+  .#{$prefix}u-top-neg-12\/12 {top: - 100% !important;}
+
+  .#{$prefix}u-right-auto  {right: auto !important;}
+  .#{$prefix}u-right-0  {right: 0 !important;}
+  .#{$prefix}u-right-1\/12  {right: 8.333333% !important;}
+  .#{$prefix}u-right-2\/12  {right: 16.666667% !important;}
+  .#{$prefix}u-right-3\/12  {right: 25% !important;}
+  .#{$prefix}u-right-4\/12  {right: 33.333333% !important;}
+  .#{$prefix}u-right-5\/12  {right: 41.666667% !important;}
+  .#{$prefix}u-right-6\/12  {right: 50% !important;}
+  .#{$prefix}u-right-7\/12  {right: 58.333333% !important;}
+  .#{$prefix}u-right-8\/12  {right: 66.666667% !important;}
+  .#{$prefix}u-right-9\/12  {right: 75% !important;}
+  .#{$prefix}u-right-10\/12 {right: 83.333333% !important;}
+  .#{$prefix}u-right-11\/12 {right: 91.666667% !important;}
+  .#{$prefix}u-right-12\/12 {right: 100% !important;}
+  .#{$prefix}u-right-neg-1\/12  {right: - 8.333333% !important;}
+  .#{$prefix}u-right-neg-2\/12  {right: - 16.666667% !important;}
+  .#{$prefix}u-right-neg-3\/12  {right: - 25% !important;}
+  .#{$prefix}u-right-neg-4\/12  {right: - 33.333333% !important;}
+  .#{$prefix}u-right-neg-5\/12  {right: - 41.666667% !important;}
+  .#{$prefix}u-right-neg-6\/12  {right: - 50% !important;}
+  .#{$prefix}u-right-neg-7\/12  {right: - 58.333333% !important;}
+  .#{$prefix}u-right-neg-8\/12  {right: - 66.666667% !important;}
+  .#{$prefix}u-right-neg-9\/12  {right: - 75% !important;}
+  .#{$prefix}u-right-neg-10\/12 {right: - 83.333333% !important;}
+  .#{$prefix}u-right-neg-11\/12 {right: - 91.666667% !important;}
+  .#{$prefix}u-right-neg-12\/12 {right: - 100% !important;}
+
+  .#{$prefix}u-bottom-auto  {bottom: auto !important;}
+  .#{$prefix}u-bottom-0  {bottom: 0 !important;}
+  .#{$prefix}u-bottom-1\/12  {bottom: 8.333333% !important;}
+  .#{$prefix}u-bottom-2\/12  {bottom: 16.666667% !important;}
+  .#{$prefix}u-bottom-3\/12  {bottom: 25% !important;}
+  .#{$prefix}u-bottom-4\/12  {bottom: 33.333333% !important;}
+  .#{$prefix}u-bottom-5\/12  {bottom: 41.666667% !important;}
+  .#{$prefix}u-bottom-6\/12  {bottom: 50% !important;}
+  .#{$prefix}u-bottom-7\/12  {bottom: 58.333333% !important;}
+  .#{$prefix}u-bottom-8\/12  {bottom: 66.666667% !important;}
+  .#{$prefix}u-bottom-9\/12  {bottom: 75% !important;}
+  .#{$prefix}u-bottom-10\/12 {bottom: 83.333333% !important;}
+  .#{$prefix}u-bottom-11\/12 {bottom: 91.666667% !important;}
+  .#{$prefix}u-bottom-12\/12 {bottom: 100% !important;}
+  .#{$prefix}u-bottom-neg-1\/12  {bottom: - 8.333333% !important;}
+  .#{$prefix}u-bottom-neg-2\/12  {bottom: - 16.666667% !important;}
+  .#{$prefix}u-bottom-neg-3\/12  {bottom: - 25% !important;}
+  .#{$prefix}u-bottom-neg-4\/12  {bottom: - 33.333333% !important;}
+  .#{$prefix}u-bottom-neg-5\/12  {bottom: - 41.666667% !important;}
+  .#{$prefix}u-bottom-neg-6\/12  {bottom: - 50% !important;}
+  .#{$prefix}u-bottom-neg-7\/12  {bottom: - 58.333333% !important;}
+  .#{$prefix}u-bottom-neg-8\/12  {bottom: - 66.666667% !important;}
+  .#{$prefix}u-bottom-neg-9\/12  {bottom: - 75% !important;}
+  .#{$prefix}u-bottom-neg-10\/12 {bottom: - 83.333333% !important;}
+  .#{$prefix}u-bottom-neg-11\/12 {bottom: - 91.666667% !important;}
+  .#{$prefix}u-bottom-neg-12\/12 {bottom: - 100% !important;}
+  
+  .#{$prefix}u-left-auto  {left: auto !important;}
+  .#{$prefix}u-left-0  {left: 0 !important;}
+  .#{$prefix}u-left-1\/12  {left: 8.333333% !important;}
+  .#{$prefix}u-left-2\/12  {left: 16.666667% !important;}
+  .#{$prefix}u-left-3\/12  {left: 25% !important;}
+  .#{$prefix}u-left-4\/12  {left: 33.333333% !important;}
+  .#{$prefix}u-left-5\/12  {left: 41.666667% !important;}
+  .#{$prefix}u-left-6\/12  {left: 50% !important;}
+  .#{$prefix}u-left-7\/12  {left: 58.333333% !important;}
+  .#{$prefix}u-left-8\/12  {left: 66.666667% !important;}
+  .#{$prefix}u-left-9\/12  {left: 75% !important;}
+  .#{$prefix}u-left-10\/12 {left: 83.333333% !important;}
+  .#{$prefix}u-left-11\/12 {left: 91.666667% !important;}
+  .#{$prefix}u-left-12\/12 {left: 100% !important;}
+  .#{$prefix}u-left-neg-1\/12  {left: - 8.333333% !important;}
+  .#{$prefix}u-left-neg-2\/12  {left: - 16.666667% !important;}
+  .#{$prefix}u-left-neg-3\/12  {left: - 25% !important;}
+  .#{$prefix}u-left-neg-4\/12  {left: - 33.333333% !important;}
+  .#{$prefix}u-left-neg-5\/12  {left: - 41.666667% !important;}
+  .#{$prefix}u-left-neg-6\/12  {left: - 50% !important;}
+  .#{$prefix}u-left-neg-7\/12  {left: - 58.333333% !important;}
+  .#{$prefix}u-left-neg-8\/12  {left: - 66.666667% !important;}
+  .#{$prefix}u-left-neg-9\/12  {left: - 75% !important;}
+  .#{$prefix}u-left-neg-10\/12 {left: - 83.333333% !important;}
+  .#{$prefix}u-left-neg-11\/12 {left: - 91.666667% !important;}
+  .#{$prefix}u-left-neg-12\/12 {left: - 100% !important;}
+}

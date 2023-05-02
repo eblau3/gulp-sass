@@ -1,0 +1,13 @@
+@use "../../../global" as *;
+
+// overflow
+@include responsive using ($prefix) {
+  .#{$prefix}u-overflow-auto     {overflow: auto !important;}
+  .#{$prefix}u-overflow-hidden   {overflow: hidden !important;}
+  .#{$prefix}u-overflow-visible  {overflow: visible !important;}
+  .#{$prefix}u-overflow-scroll   {overflow: scroll !important;}
+  .#{$prefix}u-overflow-x-scroll {overflow-x: scroll !important;}
+  .#{$prefix}u-overflow-y-scroll {overflow-y: scroll !important;}
+  .#{$prefix}u-overflow-x-auto   {overflow-x: auto !important;}
+  .#{$prefix}u-overflow-y-auto   {overflow-y: auto !important;}
+}

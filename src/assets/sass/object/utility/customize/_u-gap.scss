@@ -1,0 +1,10 @@
+@use "../../../global" as *;
+
+// gap
+@include responsive using ($prefix) {
+  @each $name, $value in $spacing {
+  	.#{$prefix}u-gap-#{$name} {
+  		gap: spacing($name) !important;
+  	}
+  }
+}

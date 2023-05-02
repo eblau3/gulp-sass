@@ -1,0 +1,7 @@
+@use "../../../global" as *;
+
+// visibility
+@include responsive using ($prefix) {
+  .#{$prefix}u-visible   {visibility: visible !important;}
+  .#{$prefix}u-invisible {visibility: hidden !important;}
+}

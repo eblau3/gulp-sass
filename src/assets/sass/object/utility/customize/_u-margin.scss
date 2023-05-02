@@ -1,0 +1,48 @@
+@use "../../../global" as *;
+
+@include responsive using ($prefix) {
+  // margin
+  @each $name, $value in $spacing {
+    .#{$prefix}u-m-#{$name} {
+      margin: $value !important;
+    }
+  }
+  .#{$prefix}u-m-0 {margin: 0 !important;}
+  .#{$prefix}u-m-auto {margin: auto !important;}
+
+  // margin-top
+  @each $name, $value in $spacing {
+    .#{$prefix}u-mt-#{$name} {
+      margin-top: $value !important;
+    }
+  }
+  .#{$prefix}u-mt-0 {margin-top: 0 !important;}
+  .#{$prefix}u-mt-auto {margin-top: auto !important;}
+
+  // margin-right
+  @each $name, $value in $spacing {
+    .#{$prefix}u-mr-#{$name} {
+      margin-right: $value !important;
+    }
+  }
+  .#{$prefix}u-mr-0 {margin-right: 0 !important;}
+  .#{$prefix}u-mr-auto {margin-right: auto !important;}
+
+  // margin-bottom
+  @each $name, $value in $spacing {
+    .#{$prefix}u-mb-#{$name} {
+      margin-bottom: $value !important;
+    }
+  }
+  .#{$prefix}u-mb-0 {margin-bottom: 0 !important;}
+  .#{$prefix}u-mb-auto {margin-bottom: auto !important;}
+
+  // margin-left
+  @each $name, $value in $spacing {
+    .#{$prefix}u-ml-#{$name} {
+      margin-left: $value !important;
+    }
+  }
+  .#{$prefix}u-ml-0 {margin-left: 0 !important;}
+  .#{$prefix}u-ml-auto {margin-left: auto !important;}
+}

@@ -1,0 +1,8 @@
+@use "../../../global" as *;
+
+// width
+@include responsive using ($prefix) {
+  @each $name, $value in $spacing {
+    .#{$prefix}u-w-#{$name} {width: $value !important;}
+  }
+}

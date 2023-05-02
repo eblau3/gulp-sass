@@ -1,0 +1,27 @@
+//----------------------------------------------------------------------------------------------------
+// Section
+//----------------------------------------------------------------------------------------------------
+// Use:
+// <section class="c-section c-section--2xl">...</section>
+//
+// Modifire:
+// c-section--[ $spacing ]
+//----------------------------------------------------------------------------------------------------
+@use "../../global" as *;
+
+$block: 'c-section';
+
+.#{$block} {
+  position: relative;
+	display: block;
+	width: 100%;
+}
+
+@include responsive using ($prefix) {
+	@each $name, $value in $spacing {
+		.#{$prefix}#{$block}--#{$name} {
+			padding-top: $value;
+			padding-bottom: $value;
+		}
+	}
+}

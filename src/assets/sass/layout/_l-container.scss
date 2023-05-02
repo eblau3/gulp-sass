@@ -1,0 +1,9 @@
+@use '../global' as *;
+
+.l-container {
+	position: relative;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+  background-color: color('white');
+}

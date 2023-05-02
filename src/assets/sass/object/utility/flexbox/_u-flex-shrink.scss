@@ -1,0 +1,7 @@
+@use "../../../global" as *;
+
+// flex-shrink
+@include responsive using ($prefix) {
+  .#{$prefix}u-flex-shrink-0 {flex-shrink: 0 !important;}
+  .#{$prefix}u-flex-shrink   {flex-shrink: 1 !important;}
+}

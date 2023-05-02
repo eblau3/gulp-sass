@@ -1,0 +1,15 @@
+// rem
+@function rem($px) {
+  @return calc(($px / 16) * 1rem);
+}
+
+// map-deep-get
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+		@if not map-has-key($map, $key) {
+			@return null;
+		}
+		$map: map-get($map, $key);
+	}
+	@return $map;
+}

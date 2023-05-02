@@ -1,0 +1,10 @@
+@use "../../../global" as *;
+
+// justify-items
+@include responsive using ($prefix) {
+  .#{$prefix}u-justify-items-auto    {justify-items: auto !important;}
+  .#{$prefix}u-justify-items-start   {justify-items: start !important;}
+  .#{$prefix}u-justify-items-end     {justify-items: end !important;}
+  .#{$prefix}u-justify-items-center  {justify-items: center !important;}
+  .#{$prefix}u-justify-items-stretch {justify-items: stretch !important;}
+}

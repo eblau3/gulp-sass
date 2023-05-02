@@ -1,0 +1,68 @@
+@use "../../../global" as *;
+
+@include responsive using ($prefix) {
+  // font-style
+  .#{$prefix}u-italic     {font-style: italic !important;}
+  .#{$prefix}u-not-italic {font-style: normal !important;}
+  
+  // text-align
+  .#{$prefix}u-text-right   {text-align: right !important;}
+  .#{$prefix}u-text-center  {text-align: center !important;}
+  .#{$prefix}u-text-left    {text-align: left !important;}
+  .#{$prefix}u-text-justify {text-align: justify !important;}
+  
+  // text-decoration
+  .#{$prefix}u-underline    {text-decoration: underline !important;}
+  .#{$prefix}u-line-through {text-decoration: line-through !important;}
+  .#{$prefix}u-no-underline {text-decoration: none !important;}
+  
+  // text-overflow
+  .#{$prefix}u-overflow-ellipsis {text-overflow: ellipsis !important;}
+  .#{$prefix}u-overflow-clip     {text-overflow: clip !important;}
+  
+  // vertical-align
+  .#{$prefix}u-align-baseline    {vertical-align: baseline !important;}
+  .#{$prefix}u-align-top         {vertical-align: top !important;}
+  .#{$prefix}u-align-middle      {vertical-align: middle !important;}
+  .#{$prefix}u-align-bottom      {vertical-align: bottom !important;}
+  .#{$prefix}u-align-text-top    {vertical-align: text-top !important;}
+  .#{$prefix}u-align-text-bottom {vertical-align: text-bottom !important;}
+  
+  // white-space
+  .#{$prefix}u-whitespace-normal   {white-space: normal !important;}
+  .#{$prefix}u-whitespace-nowrap   {white-space: nowrap !important;}
+  .#{$prefix}u-whitespace-pre      {white-space: pre !important;}
+  .#{$prefix}u-whitespace-pre-line {white-space: pre-line !important;}
+  .#{$prefix}u-whitespace-pre-wrap {white-space: pre-wrap !important;}
+  
+  // word-break
+  .#{$prefix}u-break-normal {
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+  .#{$prefix}u-break-words {overflow-wrap: break-word !important;}
+  .#{$prefix}u-break-all   {word-break: break-all !important;}
+  
+  // text-indent
+  .#{$prefix}u-indent {text-indent: 1em !important;}
+
+  // clamp
+  .#{$prefix}u-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+  }
+  .#{$prefix}u-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+  }
+  .#{$prefix}u-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+  }
+}
